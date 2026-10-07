@@ -1,2 +1,20 @@
-# blog-auto-releases
-Blog Auto Windows installers and update metadata.
+# Blog Auto 배포
+
+Blog Auto의 Windows 설치 파일과 업데이트 정보를 배포하는 공개 저장소입니다. 제품 소스 코드는 별도의 비공개 저장소에서 관리합니다.
+
+## 다운로드
+
+설치 파일과 변경 내용은 [Releases](https://github.com/thugwooo/blog-auto-releases/releases)에서 제공합니다. 공개된 릴리즈가 없으면 설치 파일은 준비 중입니다.
+
+## 업데이트
+
+자동 업데이트 지원 버전은 최초 한 번 수동 설치한 뒤 앱에서 새 버전을 받을 수 있도록 준비합니다. 지원 버전이 공개되기 전에는 설치 파일로 업데이트합니다.
+
+수동 설치 시 기존 앱에서 작업을 저장하고 정상 종료한 뒤, 같은 Windows 사용자 계정에서 새 설치 파일을 실행합니다. 네이버 편집기에 미저장 내용이 있으면 먼저 임시저장해 주세요. 사용자 데이터와 암호화 저장소를 삭제하지 마세요.
+
+## 배포 파일과 운영
+
+- 릴리즈 첨부 파일: Windows 설치 EXE, 업데이트 정보 `latest.yml`, 파일 해시, 설치 안내와 변경 내용.
+- 설치 파일은 Git 이력에 넣지 않고 Releases에 첨부합니다.
+- 로컬에서 빌드·검사한 파일을 Draft Release에 올리고 확인 후 공개합니다. GitHub Actions는 사용하지 않습니다.
+- 원본 소스, source map, 개발·테스트 자료, API 키, 인증 토큰, 사용자 데이터는 이 저장소에 게시하지 않습니다.
